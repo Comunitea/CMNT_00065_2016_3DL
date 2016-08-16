@@ -43,10 +43,10 @@
                     </div>
 
                     <div class="row mt32 mb32" id="informations">
-                        <div class="col-xs32" t-if="o.partner_id.supplier_ref">
+                        <!--div class="col-xs32" t-if="o.partner_id.supplier_ref">
                             <strong>Ref. proveedor:</strong>
                             <p t-field="o.partner_id.supplier_ref"/>
-                        </div>
+                        </div-->
                         <div t-if="o.client_order_ref" class="col-xs-3">
                             <strong>Reference:</strong>
                             <p t-field="o.client_order_ref"/>
