@@ -27,7 +27,8 @@
     'author': 'Pexego',
     'website': '',
     "depends": ['report', 'sale', 'stock'],
-    "data": ['views/ir_qweb.xml', 
+    "data": [
+            #'views/ir_qweb.xml', 
              'views/report_proforma.xml',
              'views/report_saleorder.xml',
              'sale_report.xml',
