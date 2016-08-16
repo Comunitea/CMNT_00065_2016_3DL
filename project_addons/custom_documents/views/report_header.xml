@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+       <template id="report.external_layout_header">
+            <div class="header">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <span t-esc="company.name.upper()"/>
+                        <p t-field="company.partner_id.vat"/>
+                    </div>
+                    <div class="col-xs-2 text-left">
+                        <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % company.logo" style="max-height: 70px;"/>
+                    </div>
+                    <div class="col-xs-3 col-xs-offset-3 text-right">
+                        <img src="/custom_documents/static/src/img/quality_logo.jpg" style="max-height: 70px;"/>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </data>
+</openerp>
