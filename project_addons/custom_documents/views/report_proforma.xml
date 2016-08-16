@@ -72,7 +72,7 @@
                        </thead>
                        <tbody class="sale_tbody">
                             <tr t-foreach="o.order_line" t-as="l">
-                                <t t-if="l.pack_depth == 0">
+                              
                                     <td>
                                        <span t-field="l.name"/>
                                     </td>
@@ -93,7 +93,7 @@
                                         <span t-field="l.price_subtotal"
                                             t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
                                     </td>
-                                </t>
+                              
                             </tr>
                         </tbody>
                     </table>
