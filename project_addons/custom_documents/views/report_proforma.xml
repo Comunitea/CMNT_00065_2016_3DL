@@ -41,18 +41,12 @@
 
 
                     <div class="row mt32 mb32" id="informations">
-                        <!--div class="col-xs-2" t-if="o.partner_id.supplier_ref">
-                            <strong>Ref. proveedor:</strong>
-                            <p t-field="o.partner_id.supplier_ref"/>
-                        </div-->
+                        
                         <div t-if="o.client_order_ref" class="col-xs-2">
                             <strong>Reference:</strong>
                             <p t-field="o.client_order_ref"/>
                         </div>
-                        <div t-if="o.ship_id" class="col-xs-2">
-                            <strong>Ship:</strong>
-                            <p t-field="o.ship_id"/>
-                        </div>
+                        
                         <div t-if="o.date_order" class="col-xs-2">
                             <strong t-if="o.state not in ['draft','sent']">Date Ordered:</strong>
                             <strong t-if="o.state in ['draft','sent']">Quotation Date:</strong>

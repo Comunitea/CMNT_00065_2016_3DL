@@ -43,18 +43,12 @@
                     </div>
 
                     <div class="row mt32 mb32" id="informations">
-                        <!--div class="col-xs32" t-if="o.partner_id.supplier_ref">
-                            <strong>Ref. proveedor:</strong>
-                            <p t-field="o.partner_id.supplier_ref"/>
-                        </div-->
+                       
                         <div t-if="o.client_order_ref" class="col-xs-3">
                             <strong>Reference:</strong>
                             <p t-field="o.client_order_ref"/>
                         </div>
-                        <div t-if="o.ship_id" class="col-xs-3">
-                            <strong>Ship:</strong>
-                            <p t-field="o.ship_id"/>
-                        </div>
+                        
                         <div t-if="o.date_order" class="col-xs-3">
                             <strong>Date:</strong>
                             <p t-field="o.date_order" t-field-options='{"format": "dd/MM/y"}'/>
