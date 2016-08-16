@@ -18,8 +18,5 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-from . import stock
+
 from . import sale_order
-from . import payment_mode
-from . import res_partner
-from . import purchase
