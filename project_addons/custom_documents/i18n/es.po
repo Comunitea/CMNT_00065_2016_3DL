@@ -381,6 +381,7 @@ msgstr "Buque:"
 #. module: custom_documents
 #: view:website:custom_documents.report_purchaseorder_document
 #: view:website:purchase.report_purchasequotation_document
+#: view:website:custom_documents.report_saleorder_document
 msgid "Shipping address:"
 msgstr "Dirección de envío:"
 
