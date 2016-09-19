@@ -27,7 +27,7 @@
     'author': 'Pexego',
     'website': '',
     "depends": ['report', 'sale', 'stock', 'sale_layout', 
-                'sotck_picking_invoice_link'],
+                'stock_picking_invoice_link'],
     "data": [
             #'views/ir_qweb.xml', 
              'views/report_proforma.xml',
