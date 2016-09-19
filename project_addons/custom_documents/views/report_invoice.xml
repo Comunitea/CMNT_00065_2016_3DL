@@ -25,10 +25,10 @@
                     </h2>
 
                     <div class="row mt32 mb32">
-                        <div class="col-xs-2" t-if="o.partner_id.supplier_ref">
+                        <!-- <div class="col-xs-2" t-if="o.partner_id.supplier_ref">
                             <strong>Ref. proveedor:</strong>
                             <p t-field="o.partner_id.supplier_ref"/>
-                        </div>
+                        </div> -->
                         <div class="col-xs-2" t-if="o.name">
                             <strong>Referencia:</strong>
                             <p t-field="o.name"/>
@@ -49,10 +49,10 @@
                             <strong>Reference:</strong>
                             <p t-field="o.reference"/>
                         </div>
-                        <div class="col-xs-2" t-if="o.ship_id">
+                       <!--  <div class="col-xs-2" t-if="o.ship_id">
                             <strong>Ship:</strong>
                             <p t-field="o.ship_id.name"/>
-                        </div>
+                        </div> -->
                     </div>
 
                     <table class="table table-condensed">

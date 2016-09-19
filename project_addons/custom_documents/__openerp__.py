@@ -26,7 +26,8 @@
     'description': """""",
     'author': 'Pexego',
     'website': '',
-    "depends": ['report', 'sale', 'stock'],
+    "depends": ['report', 'sale', 'stock', 'sale_layout', 
+                'sotck_picking_invoice_link'],
     "data": [
             #'views/ir_qweb.xml', 
              'views/report_proforma.xml',
@@ -36,7 +37,7 @@
              #'views/valued_picking_report.xml',
              #'views/report_purchase_order.xml', 
              #'views/report_header.xml',
-             #'views/report_invoice.xml',
+             'views/report_invoice.xml',
              'data/paperformat_data.xml',
              #'views/purchase_quotation.xml'
              ],
