@@ -36,7 +36,7 @@
              'views/report_saleorder.xml',
              'views/report_stockpicking.xml',
              #'views/valued_picking_report.xml',
-             #'views/report_purchase_order.xml',
+             'views/report_purchase_order.xml',
              #'views/report_header.xml',
              'views/report_invoice.xml',
              'data/paperformat_data.xml',

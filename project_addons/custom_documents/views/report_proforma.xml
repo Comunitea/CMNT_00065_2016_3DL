@@ -53,45 +53,47 @@
                         </div>
                     </div>
 
-                    <table class="table table-condensed">
-                        <thead>
-                            <tr>
-                                <th>Description</th>
-                                <th class="text-right">Quantity</th>
-                                <th class="text-right">Unit Price</th>
-                                <t t-if="o.have_discounts">
-                                    <th groups="sale.group_discount_per_so_line">Disc.(%)</th>
-                                </t>
-                                <th class="text-right">Price</th>
-                            </tr>
-                       </thead>
-                       <tbody class="sale_tbody">
-                            <tr t-foreach="o.order_line" t-as="l">
-                              
-                                    <td>
-                                       <span t-field="l.name"/>
-                                    </td>
-                                    <td class="text-right">
-                                        <span t-field="l.product_uom_qty"/>
-                                        <span groups="product.group_uom" t-field="l.product_uom"/>
-                                    </td>
-                                    <td class="text-right">
-                                        <span t-field="l.price_unit"
-                                            t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
-                                    </td>
+                    <div class="row">
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th class="text-right">Quantity</th>
+                                    <th class="text-right">Unit Price</th>
                                     <t t-if="o.have_discounts">
-                                        <td groups="sale.group_discount_per_so_line">
-                                            <span t-field="l.discount"/>
-                                        </td>
+                                        <th groups="sale.group_discount_per_so_line">Disc.(%)</th>
                                     </t>
-                                    <td class="text-right">
-                                        <span t-field="l.price_subtotal"
-                                            t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
-                                    </td>
-                              
-                            </tr>
-                        </tbody>
-                    </table>
+                                    <th class="text-right">Price</th>
+                                </tr>
+                           </thead>
+                           <tbody class="sale_tbody">
+                                <tr t-foreach="o.order_line" t-as="l">
+                                  
+                                        <td>
+                                           <span t-field="l.name"/>
+                                        </td>
+                                        <td class="text-right">
+                                            <span t-field="l.product_uom_qty"/>
+                                            <span groups="product.group_uom" t-field="l.product_uom"/>
+                                        </td>
+                                        <td class="text-right">
+                                            <span t-field="l.price_unit"
+                                                t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
+                                        </td>
+                                        <t t-if="o.have_discounts">
+                                            <td groups="sale.group_discount_per_so_line">
+                                                <span t-field="l.discount"/>
+                                            </td>
+                                        </t>
+                                        <td class="text-right">
+                                            <span t-field="l.price_subtotal"
+                                                t-field-options='{"widget": "monetary", "display_currency": "o.pricelist_id.currency_id"}'/>
+                                        </td>
+                                  
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <div class="row">
                         <div class="col-xs-4 pull-right">
@@ -122,12 +124,13 @@
                     </div>
 
                     
-
-                    <p t-field="o.note" />
-                    <p t-if="o.payment_term.note">
-                        <strong>Payment Term:</strong>
-                        <span t-field="o.payment_term.note"/>
-                    </p>
+                    <div class="row">
+                        <p t-field="o.note" />
+                        <p t-if="o.payment_term.note">
+                            <strong>Payment Term:</strong>
+                            <span t-field="o.payment_term.note"/>
+                        </p>
+                    </div>
                     <div class="row" t-if="o.payment_mode_id and o.payment_mode_id.show_client_account" style="page-break-inside: avoid;">
                         <div class="col-xs-4">
                             <strong>Payment mode:</strong> <span t-field="o.payment_mode_id.name"/>
@@ -163,7 +166,9 @@
                         <div class="col-xs-4">Date:</div>
                     </div>
                     <p></p-->
-
+                    <div class="texto-vertical">
+                        <span t-raw="o.company_id.rml_footer"/>
+                    </div>
                     <div class="oe_structure"/>
                 </div>
             </t>
