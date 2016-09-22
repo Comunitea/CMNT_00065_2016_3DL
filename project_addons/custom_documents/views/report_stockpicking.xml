@@ -113,9 +113,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="texto-vertical">
+             <!--                <div class="texto-vertical">
                                 <span t-raw="o.company_id.rml_footer"/>
-                            </div>
+                            </div> -->
                         </div>
                     </t>
                  </t>
