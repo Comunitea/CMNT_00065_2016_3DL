@@ -22,3 +22,7 @@ transform-origin: left top;
 .row{
     margin-left:25px;
 }
+
+.custom-foot{
+    font-size: 12px;
+}

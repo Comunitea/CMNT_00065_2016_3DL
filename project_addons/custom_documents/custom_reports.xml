@@ -45,13 +45,13 @@
             name="sale.report_saleorder" 
         />
 
-        <record id="account.account_invoices" model="ir.actions.report.xml">
+        <!-- <record id="account.account_invoices" model="ir.actions.report.xml">
             <field name="paperformat_id" ref="my_paperformat_euro_2left_margin"/>
         </record>
 
         <record id="sale.report_sale_order" model="ir.actions.report.xml">
             <field name="paperformat_id" ref="my_paperformat_euro_2left_margin"/>
-        </record>
+        </record> -->
     </data>
     
    

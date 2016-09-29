@@ -31,7 +31,7 @@
     "data": [
              'custom_reports.xml',
              #'views/ir_qweb.xml',
-             # 'views/layouts.xml',  # Comentado para no poner pie a la izquierda
+             'views/layouts.xml',  # Comentado para no poner pie a la izquierda
              'views/report_proforma.xml',
              'views/report_saleorder.xml',
              # 'views/report_stockpicking.xml',
