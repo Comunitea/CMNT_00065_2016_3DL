@@ -73,8 +73,12 @@
                                 <tr t-foreach="o.invoice_line" t-as="l">
                                     <td><span t-field="l.name"/></td>
                                     <td>
+                                        <t t-if="l.move_line_ids">
+                                             <t t-if="l.move_line_ids[0].linked_move_operation_ids">
+                                                 <span t-field="l.move_line_ids[0].linked_move_operation_ids[0].operation_id.lot_id"/>
+                                              </t>
+                                        </t>
                                     </td>
-
                                     <td>
                                         <span t-field="l.quantity"/>
                                         <span t-field="l.uos_id"  groups="product.group_uom"/>
