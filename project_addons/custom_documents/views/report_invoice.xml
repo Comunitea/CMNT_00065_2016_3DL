@@ -207,9 +207,9 @@
                         <span t-field="o.fiscal_position.note"/>
                     </p>
                     </div>
-                    <div class="texto-vertical">
+                    <!-- <div class="texto-vertical">
                         <span t-raw="o.company_id.rml_footer"/>
-                    </div>
+                    </div> -->
 
                 </div>
             </t>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <template id="delivery.report_shipping2" inherit_id="stock.report_picking" />
+        <!-- <template id="delivery.report_shipping2" inherit_id="stock.report_picking" /> -->
 
         <template id="stock.report_picking">
             <t t-call="report.html_container">
