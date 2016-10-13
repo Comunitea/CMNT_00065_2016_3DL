@@ -181,7 +181,7 @@
                      </div>
 
                     
-                    <div class="row" t-if="o.payment_mode_id and  style="page-break-inside: avoid;">
+                    <div class="row" t-if="o.payment_mode_id"  style="page-break-inside: avoid;">
                         <div class="col-xs-4">
                             <strong>Payment mode:</strong> <span t-field="o.payment_mode_id.name"/>
                         </div>
@@ -189,7 +189,7 @@
                          <p t-if="o.fiscal_position.note">
                         <strong>Fiscal Position Remark:</strong>
                         <span t-field="o.fiscal_position.note"/>
-                    </p>
+                        </p>
                     </div>
                     <!-- <div class="texto-vertical">
                         <span t-raw="o.company_id.rml_footer"/>
