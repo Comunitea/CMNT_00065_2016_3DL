@@ -132,12 +132,12 @@
                         </p>
                     </div>
                     
-                    <div class="row" t-if="o.payment_mode_id and not o.payment_mode_id.show_client_account" style="page-break-inside: avoid;">
+                    <!--div class="row" t-if="o.payment_mode_id and not o.payment_mode_id.show_client_account" style="page-break-inside: avoid;"-->
                         <div class="col-xs-4">
                             <strong>Payment mode:</strong> <span t-field="o.payment_mode_id.name"/>
                         </div>
                        
-                    </div>
+                    <!--/div-->
                     <p/><p/>
                     <!--div class="row">
                         <div class="col-xs-12">
